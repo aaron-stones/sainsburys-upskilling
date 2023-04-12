@@ -14,14 +14,6 @@
     "pre-commit:lint": "prettier --ignore-path .eslintignore --check .",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
-      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-      "post-applypatch": "echo \"[Husky] post-applypatch\"",
-      "pre-commit": "echo \"[Husky] pre-commit\""
-    }
-  },
   "dependencies": {
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.0",
@@ -52,7 +44,6 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "nodemon": "^2.0.22",
-    "husky": "^8.0.0"
+    "nodemon": "^2.0.22"
   }
 }

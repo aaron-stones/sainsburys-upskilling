@@ -9,3 +9,4 @@ src/utils/test
 coverage
 .eslintrc
 docker
+.lintstagedrc.json
