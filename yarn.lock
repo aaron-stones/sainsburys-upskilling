@@ -64,7 +64,7 @@
     "@aws-sdk/types" "3.310.0"
     tslib "^2.5.0"
 
-"@aws-sdk/client-dynamodb@^3.142.0":
+"@aws-sdk/client-dynamodb@^3.142.0", "@aws-sdk/client-dynamodb@^3.310.0":
   version "3.310.0"
   resolved "https://registry.yarnpkg.com/@aws-sdk/client-dynamodb/-/client-dynamodb-3.310.0.tgz#ee0297661c2ab09c6261accc0d2a02af84f2098c"
   integrity sha512-UMl4Aqtbzrn240UkoIJDSvOjthCSfqWfd/MDzXOJTZkwzPyqXLpCtbpN5z4to3Z7k9mOYv2GuxfUdgbphnI+TA==
@@ -1870,6 +1870,22 @@ aws-sdk@^2.1225.0:
   version "2.1354.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1354.0.tgz#26a1cf72c84a4c105caf0025621a5f04327181e4"
   integrity sha512-3aDxvyuOqMB9DqJguCq6p8momdsz0JR1axwkWOOCzHA7a35+Bw+WLmqt3pWwRjR1tGIwkkZ2CvGJObYHsOuw3w==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.16.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    util "^0.12.4"
+    uuid "8.0.0"
+    xml2js "0.5.0"
+
+aws-sdk@^2.1356.0:
+  version "2.1356.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1356.0.tgz#e8ff70ebba7e13060e6972034bbf69d186523bfb"
+  integrity sha512-At7/tPJrAxlSIuyv/KpjgoNZSVp4y6nmrfcf89xe4KTR3+SRXnX4X0646bkCyU58jjSguqPjSJopsAFK16jdjg==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"

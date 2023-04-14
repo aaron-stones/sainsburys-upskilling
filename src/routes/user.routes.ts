@@ -1,7 +1,6 @@
 import express from 'express'
 import {
   create,
-  get,
   getSingle,
   remove,
   update,
@@ -10,8 +9,6 @@ import {
 const PARAMS = '/:userID'
 
 const UserRouter = express.Router()
-
-UserRouter.get('/', get)
 
 UserRouter.get(PARAMS, getSingle)
 

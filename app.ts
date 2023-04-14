@@ -7,7 +7,20 @@ dotenv.config()
 
 const app: Express = express()
 
-dynamoose.aws.ddb.local()
+if (process.env.PORT === 'Development') {
+  dynamoose.aws.ddb.local()
+} else {
+  // Set the AWS region for DynamoDB
+  // Create new DynamoDB instance
+  const ddb = new dynamoose.aws.ddb.DynamoDB({
+    accessKeyId: 'AKID',
+    secretAccessKey: 'SECRET',
+    region: 'us-east-1',
+  })
+
+  // Set DynamoDB instance to the Dynamoose DDB instance
+  dynamoose.aws.ddb.set(ddb)
+}
 
 app.use(express.json())
 app.use('/user', UserRouter)
